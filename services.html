@@ -1,51 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - FolioOne Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicons -->
+  <title>RSVP - Birthday Celebration</title>
+  <meta name="description" content="Birthday RSVP for Syluck Verjom.">
+  <meta name="keywords" content="RSVP, Birthday, Syluck">
+
+  <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- RSVP Page Styles -->
+  <style>
+   :root {
+  /* 🎨 Color Palette */
+  --primary-bg: #0f1423;       /* Main dark background */
+  --container-bg: #1926438e;     /* Card background */
+  --text-primary: #7287ff;     /* Headings */
+  --text-secondary: #7d71ff;   /* Accents */
+  --accent-happy: #7d81ff #ADD8E6(215, 9, 61);
+  --border-color: #babbec;
+
+  /* ✍️ Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
+  /* 🪄 Extras */
+  --card-radius: 12px;
+  --card-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+    .rsvp-card {
+      background: var(--container-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 40px;
+      max-width: 550px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .header-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--accent-happy);
+    }
+
+    .rsvp-card h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5em;
+      font-weight: 600;
+      color: var(--accent-happy);
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    .rsvp-card h2 {
+      font-family: var(--font-body);
+      font-size: 1.2em;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin: 0 0 20px;
+    }
+
+    .details-list .detail-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border-color);
+      font-size: 1.1em;
+    }
+
+    .detail-item:last-child {
+      border-bottom: none;
+    }
+
+    .detail-label {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .detail-info {
+      font-weight: 600;
+      font-family: var(--font-heading);
+      color: var(--accent-happy);
+    }
+
+    .cta-section {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .rsvp-button {
+      display: inline-block;
+      background: var(--accent-happy);
+      color: var(--primary-bg);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 1.1em;
+      padding: 12px 30px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(78, 249, 255, 0.4);
+    }
+
+    .rsvp-button:hover {
+      background: #c1d9fb;
+    }
+
+    .note {
+      margin-top: 25px;
+      font-size: 0.9em;
+      color: var(--text-secondary);
+    }
+  </style>
 </head>
 
 <body class="services-page">
 
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+    <div class="container d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
+      <!-- Nav -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -58,150 +155,92 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
+      <!-- Social Links -->
       <div class="header-social-links">
-          <a href="https://www.facebook.com/syluckverjom1231" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/sailak16/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://github.com/Syluck"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/syluckverjom1231" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/sailak16/" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/Syluck" aria-label="GitHub"><i class="bi bi-github"></i></a>
       </div>
 
     </div>
   </header>
 
+  <!-- Main -->
   <main class="main">
-
-    <!-- Services Section -->
     <section id="services" class="services section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Electronics and Communications Engineering expertise combined with modern web development skills 
-          to deliver responsive, efficient, and reliable websites. Services focus on creating practical, 
-          user-friendly solutions that blend technical precision with creative design.</p>
-      </div><!-- End Section Title -->
+        <h2>You're Invited!</h2>
+        <p>I'm celebrating my birthday and would love for you to join me! The details are below. Please RSVP so I can save you a seat.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="rsvp-card">
 
-        <div class="row justify-content-center g-5">
+          <!-- Card Header -->
+          <div class="header-section">
+            <h1>Birthday Celebration</h1>
+            <h2>A Party with Syluck</h2>
+            <p style="color: var(--text-secondary);">A small gathering to share food, stories, and good vibes. KKB Policy is strictly Implemented</p>
+          </div>
 
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="service-content">
-                <h3>Custom Web Development</h3>
-                <p>As a Custom Web Developer, I design and develop unique, 
-                  user-friendly websites that align with each client’s brand and goals, 
-                  ensuring functionality, performance, and modern design standards.</p>
-                
-              </div>
+          <!-- Details -->
+          <div class="details-list">
+            <div class="detail-item">
+              <span class="detail-label">Date:</span>
+              <span class="detail-info">Thursday, October 16th</span>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-phone-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3>Mobile App Solutions</h3>
-                <p>As a Mobile App Solutions Developer, I design and build 
-                  applications that solve real-world problems, combining 
-                  user-friendly design with reliable and scalable performance.</p>
-                
-              </div>
+            <div class="detail-item">
+              <span class="detail-label">Time:</span>
+              <span class="detail-info">7:00 PM onwards</span>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-palette2"></i>
-              </div>
-              <div class="service-content">
-                <h3>UI/UX Design</h3>
-                <p>My role as a UI/UX Designer involves creating user-focused designs that enhance interaction, accessibility, and overall digital experiences.</p>
-                
-              </div>
+            <div class="detail-item">
+              <span class="detail-label">Location:</span>
+              <span class="detail-info">The Skylight Lounge</span>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-bar-chart-line"></i>
-              </div>
-              <div class="service-content">
-                <h3>Digital Marketing</h3>
-                <p>As a Digital Marketing specialist, I create data-driven campaigns that connect businesses with their audience and deliver measurable results.</p>
-                
-              </div>
+            <div class="detail-item">
+              <span class="detail-label">Attire:</span>
+              <span class="detail-info">Casual & Cozy</span>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-cloud-check"></i>
-              </div>
-              <div class="service-content">
-                <h3>Cloud Computing</h3>
-                <p>My expertise in Cloud Computing focuses on delivering innovative solutions that optimize resources, enhance performance, and ensure business continuity.</p>
-                
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          <!-- CTA -->
+          <div class="cta-section">
+            <p style="font-weight: 600; color: var(--text-primary);">
+              Please RSVP by October 16th so I can finalize the count!
+            </p>
+            <a href="#" class="rsvp-button">Confirm Your Attendance</a>
+          </div>
 
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-shield-lock"></i>
-              </div>
-              <div class="service-content">
-                <h3>Cybersecurity Solutions</h3>
-                <p>I provide cybersecurity solutions that safeguard systems, applications, and data against evolving digital threats.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+          <p class="note">Looking forward to celebrating with you! 🎉</p>
         </div>
-
       </div>
-
-    </section><!-- /Services Section -->
-
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>© <strong>@Verjom2025</strong> All Rights Reserved</p>
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">@Verjom2025</strong> <span>All Rights Reserved<br></span></p>
-      </div>
       <div class="social-links d-flex justify-content-center">
         <a href="https://www.facebook.com/syluckverjom1231" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/sailak16/" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://github.com/Syluck"><i class="bi bi-github"></i></a>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
 
+      <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+    </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
   <script src="vendor/aos/aos.js"></script>
@@ -213,7 +252,7 @@
   <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="script.js"></script>
 </body>
 </html>

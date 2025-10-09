@@ -29,111 +29,99 @@
 
   <!-- RSVP Page Styles -->
   <style>
-   :root {
-  /* 🎨 Color Palette */
-  --primary-bg: #0f1423;       /* Main dark background */
-  --container-bg: #1926438e;     /* Card background */
-  --text-primary: #7287ff;     /* Headings */
-  --text-secondary: #7d71ff;   /* Accents */
-  --accent-happy: #7d81ff #ADD8E6(215, 9, 61);
-  --border-color: #babbec;
-
-  /* ✍️ Fonts */
+:root {
+  /* Blue Accent Theme */
+  --primary-bg: #232433;           /* Light blue background for readability */
+  --container-bg: #e3eaf3;         /* Soft blue card background */
+  --text-primary: #1976d2;         /* Vivid blue for headings and labels */
+  --text-secondary: #0a2540;       /* Deep blue for body text */
+  --accent-blue: #2196f3;          /* Accent blue for buttons and borders */
+  --border-color: #90caf9;         /* Light blue border */
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Roboto', sans-serif;
-
-  /* 🪄 Extras */
   --card-radius: 12px;
-  --card-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  --card-shadow: 0 6px 18px rgba(25, 118, 210, 0.08);
 }
-    .rsvp-card {
-      background: var(--container-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      padding: 40px;
-      max-width: 550px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .header-section {
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 2px solid var(--accent-happy);
-    }
-
-    .rsvp-card h1 {
-      font-family: var(--font-heading);
-      font-size: 2.5em;
-      font-weight: 600;
-      color: var(--accent-happy);
-      margin-bottom: 5px;
-      letter-spacing: 1px;
-    }
-
-    .rsvp-card h2 {
-      font-family: var(--font-body);
-      font-size: 1.2em;
-      font-weight: 400;
-      color: var(--text-secondary);
-      margin: 0 0 20px;
-    }
-
-    .details-list .detail-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-      border-bottom: 1px dashed var(--border-color);
-      font-size: 1.1em;
-    }
-
-    .detail-item:last-child {
-      border-bottom: none;
-    }
-
-    .detail-label {
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .detail-info {
-      font-weight: 600;
-      font-family: var(--font-heading);
-      color: var(--accent-happy);
-    }
-
-    .cta-section {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border-color);
-    }
-
-    .rsvp-button {
-      display: inline-block;
-      background: var(--accent-happy);
-      color: var(--primary-bg);
-      font-family: var(--font-body);
-      font-weight: 700;
-      font-size: 1.1em;
-      padding: 12px 30px;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 4px 10px rgba(78, 249, 255, 0.4);
-    }
-
-    .rsvp-button:hover {
-      background: #c1d9fb;
-    }
-
-    .note {
-      margin-top: 25px;
-      font-size: 0.9em;
-      color: var(--text-secondary);
-    }
-  </style>
+body {
+  background: var(--primary-bg);
+}
+.rsvp-card {
+  background: var(--container-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 40px;
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+}
+.header-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--accent-blue);
+}
+.rsvp-card h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.rsvp-card h2 {
+  font-family: var(--font-body);
+  font-size: 1.2em;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin: 0 0 20px;
+}
+.details-list .detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border-color);
+  font-size: 1.1em;
+}
+.detail-item:last-child {
+  border-bottom: none;
+}
+.detail-label {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.detail-info {
+  font-weight: 600;
+  font-family: var(--font-heading);
+  color: var(--accent-blue);
+}
+.cta-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+.rsvp-button {
+  display: inline-block;
+  background: var(--accent-blue);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.1em;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.15);
+}
+.rsvp-button:hover {
+  background: #1565c0;
+}
+.note {
+  margin-top: 25px;
+  font-size: 0.9em;
+  color: var(--text-secondary);
+}
+</style>
 </head>
 
 <body class="services-page">
